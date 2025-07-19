@@ -25,7 +25,7 @@ Ensure you have the following installed:
 
 ---
 
-## 🛠️ Getting Started
+## 🛠️ Setup
 
 1. **Clone the repository**
 
@@ -40,7 +40,7 @@ Ensure you have the following installed:
    npm install
    ```
 
-3. **Install dependencies**
+3. **Start the development server**
 
    ```
    npm start
