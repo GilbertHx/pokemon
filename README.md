@@ -12,7 +12,7 @@ This is a front-end project built with **Create React App**, **TypeScript**, and
 
 - ⚛️ React
 - ⛳ TypeScript
-- 🌬 Tailwind CSS
+- 🌬 Tailwind CSS (CDN)
 
 ---
 
@@ -20,7 +20,7 @@ This is a front-end project built with **Create React App**, **TypeScript**, and
 
 Ensure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (v14 or later)
+- [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) 
 
 ---
