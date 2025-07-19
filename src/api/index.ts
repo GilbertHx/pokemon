@@ -5,13 +5,23 @@ const api = axios.create({
   timeout: 5000,
 });
 
-export const getPokemons = async (limit: number = 50) => {
+export const getPokemons = async (limit: number = 50, offset: number = 0) => {
   try {
-    const { data } = await api.get(`pokemon?limit=${limit}`);
-    return data.results;
+    const { data } = await api.get(`pokemon?limit=${limit}&offset=${offset}`);
+    return {
+      results: data.results,
+      next: data.next,
+      previous: data.previous,
+      count: data.count,
+    };
   } catch (error) {
     console.error('Error fetching Pokemons:', error);
-    return [];
+    return {
+      results: [],
+      next: null,
+      previous: null,
+      count: 0,
+    };
   }
 };
 
