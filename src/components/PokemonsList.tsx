@@ -82,17 +82,17 @@ const PokemonsList: React.FC = () => {
             <button
               onClick={handlePrev}
               disabled={offset === 0}
-              className="px-4 py-2 bg-slate-900 text-white rounded-full font-mono shadow hover:bg-slate-800 transition disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+              className="px-4 py-2 bg-slate-900 text-white text-sm rounded-full font-mono shadow hover:bg-slate-800 transition disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
             >
               &larr; Previous
             </button>
-            <span className="font-mono px-4 py-2 text-slate-900  text-lg font-bold">
+            <span className="font-mono px-4 py-2 text-slate-900 text-sm font-bold">
               Page {currentPage} of {totalPages}
             </span>
             <button
               onClick={handleNext}
               disabled={offset + LIMIT >= count}
-              className="px-4 py-2 bg-slate-900 text-white rounded-full font-mono shadow hover:bg-slate-800 transition disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+              className="px-4 py-2 bg-slate-900 text-white text-sm rounded-full font-mono shadow hover:bg-slate-800 transition disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
             >
               Next &rarr;
             </button>
