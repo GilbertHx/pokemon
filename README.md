@@ -6,7 +6,7 @@ This is a front-end project built with **Create React App**, **TypeScript**, and
 
 ## 🌐 Live Demo
 
-👉 [View Live Site](https://your-live-site-url.com)
+👉 [View Live Site](https://spectacular-semolina-faeaa4.netlify.app/)
 
 ## 🧰 Tech Stack
 
