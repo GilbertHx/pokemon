@@ -6,9 +6,9 @@ import PokemonsList from './components/PokemonsList';
 
 const App: React.FC = () => (
   <Router>
-    <div className="App min-h-screen flex flex-col bg-gray-50">
+    <div className="App min-h-screen flex flex-col bg-gradient-to-br from-yellow-50 via-blue-50 to-pink-50">
       <header className="App-header bg-slate-900">
-        <h1 className="text-2xl font-mono text-yellow-400 font-bold p-4 text-center">Pokemon</h1>
+        <h1 className="text-2xl font-mono text-yellow-400 font-bold p-4 text-center">Pokémon</h1>
       </header>
       <div className="flex-1">
         <Routes>
@@ -16,7 +16,7 @@ const App: React.FC = () => (
           <Route path="/pokemon/:name" element={<PokemonDetails />} />
         </Routes>
       </div>
-      <footer className="App-footer bg-slate-900 text-white text-center p-4 mt-8">
+      <footer className="App-footer bg-slate-900 text-white text-center p-4">
         <p className='font-mono'>Made with ❤️ by Gilbert Habimana</p>
       </footer>
     </div>
