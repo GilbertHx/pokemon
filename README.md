@@ -1,6 +1,6 @@
 # ⚛️ React + TypeScript + Tailwind CSS
 
-This is a front-end project built with **Create React App**, **TypeScript**, and styled using **Tailwind CSS**. No testing frameworks are included in this setup.
+Pokemon project built with **Create React App**, **TypeScript**, and styled using **Tailwind CSS**.
 
 ---
 
