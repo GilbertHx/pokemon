@@ -11,14 +11,20 @@ const PokemonsList: React.FC = () => {
   const [search, setSearch] = useState('');
   const [offset, setOffset] = useState(0);
   const [count, setCount] = useState(0);
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchPokemons = async () => {
       setLoading(true);
-      const data = await getPokemons(LIMIT, offset);
-      setPokemons(data.results);
-      setCount(data.count);
+      setError('');
+      try {
+        const data = await getPokemons(LIMIT, offset);
+        setPokemons(data.results);
+        setCount(data.count);
+      } catch (err) {
+        setError('Failed to fetch Pokémon. Please try again.');
+      }
       setLoading(false);
     };
     fetchPokemons();
@@ -54,6 +60,9 @@ const PokemonsList: React.FC = () => {
           className="border border-gray-300 rounded-lg px-4 py-2 w-full max-w-xs font-mono focus:outline-none focus:ring-2 focus:ring-yellow-400"
         />
       </div>
+      {error && (
+        <p className="text-center text-red-500 font-mono mb-4">{error}</p>
+      )}
       {loading ? (
         <p className="text-center font-mono text-lg">Loading...</p>
       ) : (

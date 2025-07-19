@@ -8,7 +8,7 @@ const App: React.FC = () => (
   <Router>
     <div className="App min-h-screen flex flex-col bg-gray-50">
       <header className="App-header bg-slate-900">
-        <h1 className="text-4xl font-mono text-yellow-400 font-bold p-4 text-center">Pokemon</h1>
+        <h1 className="text-2xl font-mono text-yellow-400 font-bold p-4 text-center">Pokemon</h1>
       </header>
       <div className="flex-1">
         <Routes>
